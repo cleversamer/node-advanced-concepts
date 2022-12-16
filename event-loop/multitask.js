@@ -89,5 +89,9 @@ doHash();
     another job will be the last `hash` operation which is hash #4.
 
     And now the first one or two `hash` operations will be complete,
-    and the first thread that
+    and the first thread that completes its task will be available
+    to receive file stats from the hard drive and it will read
+    the file.
+
+    After that the last two or three `hash` operation will be complete.
 */
